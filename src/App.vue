@@ -3,9 +3,7 @@
 
     <!-- 顶部 Header 区域 -->
     <mt-header fixed title="黑马程序员·Vue项目"></mt-header>
-    <mt-button type="primary" @click="show">default111</mt-button>
-    <button type="button" class="mui-btn">默认</button>
-    <button type="button" class="mui-btn mui-btn-royal">蓝色</button>
+
     <!-- 中间的 路由 router-view 区域 -->
     <transition>
       <router-view></router-view>
