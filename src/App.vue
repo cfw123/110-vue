@@ -31,39 +31,19 @@
         <span class="mui-tab-label">搜索</span>
       </router-link>
     </nav>
-
   </div>
 </template>
 
 <script>
-    import {Toast} from 'mint-ui';
 
     export default {
         data() {
             return {
-                toastInstance:null
             }
         },
         created() {
-            this.getList()
         },
         methods: {
-            getList() {
-                this.show();
-                setTimeout(() =>{
-                    this.toastInstance.close()
-                }, 3000)
-            },
-            show() {
-                // Toast('haha');
-               this.toastInstance = Toast({
-                    message: 'Upload Complete',
-                    position: 'top',
-                    duration: -1,
-                    iconClass: 'glyphicon glyphicon-shopping-cart',
-                    className: 'mytoast'
-                })
-            }
         }
 
     }
